@@ -37,4 +37,15 @@ document.getElementById("starbox").onclick = e=>{
     // }, 100);
 }
 
-
+document.getElementById("starbox").ontouchmove = e=>{
+    var dot =document.createElement("span");
+    dot.className =dots[Math.floor(Math.random()*4)]
+    dot.style.left=`${e.x}px`
+    dot.style.top=`${e.y}px`
+    
+    
+    document.body.appendChild(dot);
+    setTimeout(() => {
+       dot.remove()
+    }, 1000);
+}
