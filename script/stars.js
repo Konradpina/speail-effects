@@ -14,7 +14,7 @@ document.getElementById("starbox").onmousemove = e=>{
        dot.remove()
     }, 1000);
 }
-document.getElementById("starbox").onclick = e=>{
+document.getElementById("starbox").onmousedown= e=>{
     const colorkey=`rgb(${Math.floor(Math.random()*255)+1},${Math.floor(Math.random()*255)+1},${Math.floor(Math.random()*255)+1})`
     for(i=0;i<points.length+1;i++){
         var point =document.createElement("span");
