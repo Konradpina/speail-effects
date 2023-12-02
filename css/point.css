@@ -1,0 +1,176 @@
+.point1{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide1 1s forwards ;
+    
+}
+
+@keyframes slide1 {
+   
+   100%{
+
+    transform: translate(0vh,30vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
+.point2{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide2 1s forwards ;
+    
+}
+
+@keyframes slide2 {
+   
+   100%{
+
+    transform: translate(20vh,20vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
+.point3{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide3 1s forwards ;
+    
+}
+
+@keyframes slide3 {
+   
+   100%{
+
+    transform: translate(30vh,0vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
+.point4{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide4 1s forwards ;
+    
+}
+
+@keyframes slide4 {
+   
+   100%{
+
+    transform: translate(20vh,-20vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
+.point5{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide5 1s forwards ;
+    
+}
+
+@keyframes slide5 {
+   
+   100%{
+
+    transform: translate(0vh,-30vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
+.point6{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide6 1s forwards ;
+    
+}
+
+@keyframes slide6 {
+   
+   100%{
+
+    transform: translate(-20vh,-20vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
+.point7{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide7 1s forwards ;
+    
+}
+
+@keyframes slide7 {
+   
+   100%{
+
+    transform: translate(-30vh,0vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
+.point8{
+    margin-top: 100vh;
+    position: absolute;
+    
+    width: 9vh;
+    height: 9vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: slide8 1s forwards ;
+    
+}
+
+@keyframes slide8 {
+   
+   100%{
+
+    transform: translate(-20vh,20vh);
+    opacity: 0;
+    width: 1vh;
+    height: 1vh;
+   } 
+}
