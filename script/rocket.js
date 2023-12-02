@@ -81,8 +81,8 @@ function rocketdots(){
     if(document.getElementsByClassName("point").length!==0){
 
         for(i=0;i<document.getElementsByClassName("point").length;i++){
-            var dot =document.createElement("span");
-            dot.className =dots[Math.floor(Math.random()*4)]
+            var dot =document.createElement("span")
+            dot.className =`rockdot ${dots[Math.floor(Math.random()*4)]}`
             dot.style.left=`${document.getElementsByClassName("point")[i].getBoundingClientRect().x}px`
             dot.style.top=`${document.getElementsByClassName("point")[i].getBoundingClientRect().y}px`
             dot.style.marginTop=`200vh`
@@ -90,8 +90,13 @@ function rocketdots(){
             document.body.appendChild(dot);
             setTimeout(() => {
             dot.remove()
-            }, 100);
+            }, 1000);
         }   
+        setTimeout(() => {
+            for(i=0;i<document.getElementsByClassName("rockdot").length;i){
+                document.getElementsByClassName("rockdot")[0].remove()
+            }     
+        }, 2000);
     }
     
 }
