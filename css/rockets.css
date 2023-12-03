@@ -119,7 +119,8 @@
     height: 4vh;
     border-radius: 2vh ;
   
-    animation: rocketup1 1s forwards ;
+    animation: rocketup1 0.9s forwards  ;
+    animation-timing-function: cubic-bezier(0.510, 0.105, 0.880, 0.465);
 }
 .rocket2{
     margin-top: 0;
@@ -129,7 +130,8 @@
     height: 4vh;
     border-radius: 2vh ;
   
-    animation: rocketup2 1s forwards ;
+    animation: rocketup2 0.9s forwards  ;
+    animation-timing-function: cubic-bezier(0.510, 0.105, 0.880, 0.465);
 }
 .rocket3{
     margin-top: 0;
@@ -139,7 +141,8 @@
     height: 4vh;
     border-radius: 2vh ;
   
-    animation: rocketup3 1s forwards ;
+    animation: rocketup3 0.9s forwards  ;
+    animation-timing-function: cubic-bezier(0.510, 0.105, 0.880, 0.465);
 }
 .rocket4{
     margin-top: 0;
@@ -149,7 +152,8 @@
     height: 4vh;
     border-radius: 2vh ;
   
-    animation: rocketup4 1s forwards ;
+    animation: rocketup4 0.9s forwards  ;
+    animation-timing-function: cubic-bezier(0.510, 0.105, 0.880, 0.465);
 }
 .rocket5{
     margin-top: 0;
@@ -159,7 +163,8 @@
     height: 4vh;
     border-radius: 2vh ;
   
-    animation: rocketup5 1s forwards ;
+    animation: rocketup5 0.9s forwards  ;
+    animation-timing-function: cubic-bezier(0.510, 0.105, 0.880, 0.465);
 }
  @keyframes rocketup1 {
     100%{
@@ -198,3 +203,126 @@
     height: 4vh;
     border-radius: 2vh ;
  }
+
+
+ 
+
+
+
+ .botspark1{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: botsmall 1s  forwards ;
+}
+.botspark2{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: botsmall2 1s  forwards ;
+}
+.botspark3{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: botsmall3 1s  forwards ;
+}
+.botspark4{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: botsmall4 1s  forwards ;
+   
+}
+@keyframes botsmall4 {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    30%{
+        
+    }
+    60%{
+       
+    }
+    100%{
+        transform: translate(0vh,12vw);
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+        
+    }
+}
+@keyframes botsmall3 {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    30%{
+        
+    }
+    60%{
+       
+    }
+    100%{
+        transform: translate(-9vh,0vw);
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+       
+    }
+}
+@keyframes botsmall2 {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    30%{
+        
+    }
+    60%{
+       
+    }
+    100%{
+        transform: translate(9vh,0vw);
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+       
+    }
+}
+@keyframes botsmall {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    30%{
+        
+    }
+    60%{
+       
+    }
+    100%{
+        transform: translateY(-12vh);
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+       
+    }
+}
