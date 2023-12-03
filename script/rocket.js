@@ -1,6 +1,12 @@
 const rockets= ["rocket1","rocket2","rocket3","rocket4","rocket5"]
 const sparkels=["sparkel1","sparkel2","sparkel3","sparkel4","sparkel5"]
-const dotsparks=["botspark1","botspark2","botspark3","botspark4"]
+var dotsparks=["botspark1","botspark2","botspark3","botspark4"]
+const sparksparks=["botspark1","botspark2","botspark3","botspark4"]
+const hotsparks=["hotspark1","hotspark2","hotspark3","hotspark4"]
+var explosions=["explosion13","explosion23","explosion33","explosion43","explosion53","explosion63","explosion73","explosion83"]
+const explo1=["explosion11","explosion21","explosion31","explosion41","explosion51","explosion61","explosion71","explosion81"]
+const explo2=["explosion12","explosion22","explosion32","explosion42","explosion52","explosion62","explosion72","explosion82"]
+const explo3=["explosion13","explosion23","explosion33","explosion43","explosion53","explosion63","explosion73","explosion83"]
 let r=Math.floor(Math.random()*255)+1
 let g=Math.floor(Math.random()*255)+1
 let b=Math.floor(Math.random()*255)+1
@@ -28,6 +34,11 @@ function rocketstart(){
     r=Math.floor(Math.random()*255)+1
     g=Math.floor(Math.random()*255)+1
     b=Math.floor(Math.random()*255)+1
+    if(Math.floor(Math.random()*100)>90){
+        dotsparks=hotsparks
+    }else{
+        dotsparks=sparksparks
+    }
 
     document.body.appendChild(rocket);
     setTimeout(() => {
@@ -60,21 +71,28 @@ function rocketdots(){
 
     //Start Explosion
     if(document.getElementsByClassName("explosion").length!==0){
-        
+        let rnumber=Math.floor(Math.random()*3)
+        if(rnumber==0){
+            explosions=explo1
+        }else if(rnumber==1){   
+            explosions=explo2
+        }else if(rnumber==2){
+            explosions=explo3
+        }
         for(i=0;i<document.getElementsByClassName("explosion").length;i++){
             console.log(document.getElementsByClassName("explosion")[0].getBoundingClientRect().y)
        
-        const xx=`${document.getElementsByClassName("explosion")[0].getBoundingClientRect().x}px`
-        const yy=`${document.getElementsByClassName("explosion")[0].getBoundingClientRect().y}px`
-        document.getElementsByClassName("explosion")[0].remove()
+            const xx=`${document.getElementsByClassName("explosion")[0].getBoundingClientRect().x}px`
+            const yy=`${document.getElementsByClassName("explosion")[0].getBoundingClientRect().y}px`
+            document.getElementsByClassName("explosion")[0].remove()
             
-            for(i=0;i<points.length;i++){
+            for(i=0;i<explosions.length;i++){
                 var point =document.createElement("span");
                 document.body.appendChild(point);
                 point.style.marginTop=`200vh`
                 point.style.left=xx
                 point.style.top=yy
-                point.className =`point ${points[i]}`
+                point.className =`point ${explosions[i]}`
 
             }
             setTimeout(() => {

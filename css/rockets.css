@@ -209,7 +209,7 @@
 
 
 
- .botspark1{
+.botspark1{
     margin-top: 100vh;
     position: absolute;
     background-color: red;
@@ -320,6 +320,134 @@
     }
     100%{
         transform: translateY(-12vh);
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+       
+    }
+}
+.hotspark1{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: hotsmall1 1s  forwards ;
+}
+.hotspark2{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: hotsmall2 1s  forwards ;
+}
+.hotspark3{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: hotsmall3 1s  forwards ;
+}
+.hotspark4{
+    margin-top: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 2vh ;
+    box-shadow: red 0px 0px 2vh;
+    animation: hotsmall4 1s  forwards ;
+   
+}
+@keyframes hotsmall4 {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    40%{
+        transform: translate(0vh,9vw)
+    }
+    70%{
+        width: 2vh;
+        height: 2vh;
+       transform: translate(9vh,9vw);
+    }
+    100%{
+        transform: translate(0vh,18vw);
+
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+        
+    }
+}
+@keyframes hotsmall3 {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    50%{
+        transform: translate(-9vh,0vw)
+    }
+    70%{
+        width: 2vh;
+        height: 2vh;
+       transform: translate(-9vh,-9vw)
+    }
+    100%{
+        transform: translate(-18vh,0vw);
+        
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+       
+    }
+}
+@keyframes hotsmall2 {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    40%{
+        transform: translate(9vh,0vw);
+    }
+    70%{
+        width: 2vh;
+        height: 2vh;
+       transform: translate(9vh,9vw);
+    }
+    100%{
+        transform: translate(18vh,0vw);
+
+        opacity: 0.5;
+        width: 0vh;
+        height: 0vh;  
+       
+    }
+}
+@keyframes hotsmall1 {
+    0%{
+        width: 4vh;
+        height: 4vh;  
+    }
+    40%{
+        transform: translate(0vh,-9vw);
+    }
+    70%{
+        width: 2vh;
+        height: 2vh;
+       transform: translate(-9vh,-9vw);
+    }
+    100%{
+        transform: translate(0vh,-18vw);
         opacity: 0.5;
         width: 0vh;
         height: 0vh;  
