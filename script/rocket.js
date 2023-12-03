@@ -39,6 +39,9 @@ function rocketstart(){
     }else{
         dotsparks=sparksparks
     }
+    const audio=document.getElementById("fierwork1")
+    audio.load()
+    audio.play()
 
     document.body.appendChild(rocket);
     setTimeout(() => {
@@ -74,10 +77,27 @@ function rocketdots(){
         let rnumber=Math.floor(Math.random()*3)
         if(rnumber==0){
             explosions=explo1
+            const audio=document.getElementById("fierwork2")
+            audio.load()
+            audio.play()
         }else if(rnumber==1){   
             explosions=explo2
+            const audio=document.getElementById("fierwork2")
+            audio.load()
+            audio.play()
+            setTimeout(()=>{
+            audio.load()
+            audio.play()
+            },500)
         }else if(rnumber==2){
             explosions=explo3
+            const audio=document.getElementById("fierwork2")
+            audio.load()
+            audio.play()
+            setTimeout(()=>{
+                audio.load()
+                audio.play()
+                },500)
         }
         for(i=0;i<document.getElementsByClassName("explosion").length;i++){
             console.log(document.getElementsByClassName("explosion")[0].getBoundingClientRect().y)
@@ -100,6 +120,8 @@ function rocketdots(){
                     document.getElementsByClassName("point")[0].remove()
                 }     
             }, 1000);
+
+            
         }
        
     }

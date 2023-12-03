@@ -114,9 +114,11 @@
 .rocket1{
     margin-top: 0;
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    width: 4vh;
-    height: 4vh;
+    background-color: rgb(0, 0, 0,0);
+    z-index: 3;
+    transform: rotate(45deg);
+    width: 5vh;
+    height: 5vh;
     border-radius: 2vh ;
   
     animation: rocketup1 0.9s forwards  ;
@@ -125,9 +127,11 @@
 .rocket2{
     margin-top: 0;
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    width: 4vh;
-    height: 4vh;
+    background-color: rgb(0, 0, 0,0);
+    z-index: 3;
+    transform: rotate(45deg);
+    width: 5vh;
+    height: 5vh;
     border-radius: 2vh ;
   
     animation: rocketup2 0.9s forwards  ;
@@ -136,9 +140,11 @@
 .rocket3{
     margin-top: 0;
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    width: 4vh;
-    height: 4vh;
+    background-color: rgb(0, 0, 0,0);
+    z-index: 3;
+    transform: rotate(45deg);
+    width: 5vh;
+    height: 5vh;
     border-radius: 2vh ;
   
     animation: rocketup3 0.9s forwards  ;
@@ -147,9 +153,11 @@
 .rocket4{
     margin-top: 0;
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    width: 4vh;
-    height: 4vh;
+    background-color: rgb(0, 0, 0,0);
+    z-index: 3;
+    transform: rotate(45deg);
+    width: 5vh;
+    height: 5vh;
     border-radius: 2vh ;
   
     animation: rocketup4 0.9s forwards  ;
@@ -158,9 +166,11 @@
 .rocket5{
     margin-top: 0;
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    width: 4vh;
-    height: 4vh;
+    background-color: rgb(0, 0, 0,0);
+    z-index: 3;
+    transform: rotate(45deg);
+    width: 5vh;
+    height: 5vh;
     border-radius: 2vh ;
   
     animation: rocketup5 0.9s forwards  ;
